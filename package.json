@@ -1,0 +1,13 @@
+{
+  "name": "strat",
+  "version": "1.0.0",
+  "description": "Test trading strats on Robinhood's quotes data",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+      "start": "node ./index.js"
+  },
+  "dependencies": {
+    "request": "^2.85.0"
+  }
+}
