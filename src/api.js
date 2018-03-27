@@ -57,6 +57,8 @@ const api = {
     /**
      * @function api.quote
      *
+     * @throws Error - when ticker supplied is not a string
+     *
      * Get current quote information for a single ticker / stock.
      *
      * @param {string} ticker - the symbol for the security / stock
@@ -73,6 +75,8 @@ const api = {
 
     /**
      * @function api.quotes
+     *
+     * @throws Error - when tickers supplied is not an array of strings
      *
      * Get current quote information for multiple tickers / stocks.
      *
@@ -92,6 +96,8 @@ const api = {
 
     /**
      * @function api.historical
+     *
+     * @throws Error - when any of the parameters or ticker given is not in correct form
      *
      * Get historical data for a security's past prices.
      *
@@ -130,6 +136,8 @@ const api = {
     },
     /**
      * @function api.historicals
+     *
+     * @throws Error - when any of the parameters or tickers given is not in correct form
      *
      * Get historical data for multiple securities' past prices.
      *
